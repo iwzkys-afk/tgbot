@@ -1,6 +1,8 @@
 import logging
 from telegram import Update
 from telegram.ext import Application, MessageHandler, filters, ContextTypes, CommandHandler
+from flask import Flask
+app = Flask(__name__)
 
 # Настройки
 BOT_TOKEN = "8007279109:AAEFh17vFWjNmfbnKfN_v4jlI4zzMnOhvCQ"
@@ -97,4 +99,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
